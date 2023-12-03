@@ -12,6 +12,7 @@ public class loginBoardController implements Controller{
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		System.out.println("loginBoardController --> ");
 		
+		//로그인 화면 연결
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("login");
 		

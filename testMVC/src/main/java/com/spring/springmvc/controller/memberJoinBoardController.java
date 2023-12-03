@@ -12,6 +12,7 @@ public class memberJoinBoardController implements Controller{
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		System.out.println("memberJoinBoardController --> ");
 		
+		//회원가입 화면 연결
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("memberJoin");
 		

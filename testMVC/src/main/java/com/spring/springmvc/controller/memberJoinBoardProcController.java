@@ -14,13 +14,7 @@ public class memberJoinBoardProcController implements Controller{
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		System.out.println("memberJoinBoardProcController -->");
-		
-		/*
-		 * //1. 추가될 데이터 가져오기 (request) String writer = request.getParameter("writer");
-		 * String title = request.getParameter("title"); String content =
-		 * request.getParameter("content");
-		 */
-		
+
 		String id = request.getParameter("id");
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");

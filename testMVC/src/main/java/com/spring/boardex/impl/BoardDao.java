@@ -108,7 +108,7 @@ public class BoardDao {
 	           e.printStackTrace();
 	           return false;
 		   } finally {
-	           // 리소스를 닫아야 합니다.
+	           // 리소스 해제
 	           JdbcUtil.close(rs, pstmt, conn);
 	}
 }

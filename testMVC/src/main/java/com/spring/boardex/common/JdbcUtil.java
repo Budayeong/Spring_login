@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class JdbcUtil {
-	//db������ ���� �⺻ ���� 
+	////db접속을 위한 기본 정보 
 	static String id="root";
 	static String pass="111111";
 	static String url="jdbc:mysql://localhost:3307/mvcdb?characterEncoding=utf-8";
@@ -19,11 +19,11 @@ public class JdbcUtil {
 	public static Connection getConnection() {
 		
 		try {
-			//1.����̹� �ε�
+			//1.드라이버 로딩
 			Class.forName("com.mysql.jdbc.Driver");
-			System.out.println("mySql 드라이버 연결 성공!!");
+			System.out.println("mySql 드라이버 로딩 완료!!!!");
 			
-			//2.DB���� 
+			//2.DB연결  
 			return DriverManager.getConnection(url, id, pass);
 			
 		} catch (Exception e) {
